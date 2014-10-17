@@ -50268,6 +50268,12 @@ bash.room_contents = bash.room_contents or {}
 -- bash.target = bash.target or &quot;&quot;
 
 bash.areas = {
+	{&quot;tresleins&quot;,false},
+	{&quot;erorag&quot;,false},
+	{&quot;nagiri&quot;,false},
+	{&quot;menanon&quot;,false},
+	--  {&quot;scourge&quot;,false},
+
 	-- {&quot;aldrym&quot;,false},
 	{&quot;riksha&quot;,false},
 	{&quot;hollow&quot;,false},
@@ -51462,6 +51468,389 @@ bash.aldrym_targets = {
 	[&quot;a black sandworm&quot;] = &quot;sandworm&quot;,
 }
 
+</script>
+                            <eventHandlerList/>
+                        </Script>
+                        <Script isActive="yes" isFolder="no">
+                            <name>erorag</name>
+                            <packageName></packageName>
+                            <script>bash.erorag_name = &quot;the Ogre Fort, Erorag&quot;
+bash.erorag = {
+  3833, --   Hardened path leading to a stone gate
+  3834, --   A fallen entry gate.
+  3835, --   Below a lookout tower.
+  3836, --   A small guard checkpoint.
+  3837, --   Below a lookout.
+  3838, --   Below a lookout.
+  3839, --   Northwestern common square of Erorag.
+  3840, --   Western common square of Erorag.
+  3841, --   Southwest corner of the Erorag common square.
+  3842, --   Entry hall to the main tower.
+  3843, --   Below a lookout tower.
+  3844, --   Edge of the Erorag Common square.
+  3845, --   A ruined Erorag village well.
+  3846, --   Northern edge of the Erorag common square.
+  3848, --   Northeastern edge of the Erorag common square.
+  3849, --   Eastern common square before a tower.
+  3850, --   Southeastern corner of the common square.
+ 14356, --   Under the northwest lookout.
+ 14359, --   Atop the ruins of a watchtower.
+ 14366, --   Atop the northern wall.
+ 14367, --   Under the northeast lookout.
+ 14371, --   Atop the ruins of a watchtower.
+ 14372, --   Atop the eastern wall.
+ 14373, --   Under the southeast lookout.
+ 14374, --   Atop the ruins of a watchtower.
+ 14375, --   Atop the southern wall.
+ 14376, --   Under the southwest lookout.
+ 14377, --   Atop the ruins of a watchtower.
+ 14378, --   Atop the western wall.
+ 14386, --   A guardhouse.
+ 14403, --   Fort road skirting the wall.
+ 14404, --   Fort road by small houses.
+ 14405, --   Curving Fort road.
+ 14406, --   Fort road behind the main tower.
+ 14407, --   Curving Fort road.
+ 14408, --   Fort road beside homes.
+ 14409, --   Fort road near a middens.
+ 14411, --   A ransacked fort smithy.
+ 14413, --   Fort Armoury.
+ 14416, --   A disheveled guards-room before stairs.
+ 14417, --   A wide landing.
+ 14418, --   Atop the main tower.
+ 14419, --   Captain's Office..
+}
+bash.erorag_targets = {
+	[&quot;a hill giant&quot;] = &quot;giant&quot;,
+	[&quot;a two-headed ogre&quot;] = &quot;ogre&quot;,
+	[&quot;a decadent goblin priest&quot;] = &quot;goblin&quot;,
+	[&quot;Horde Commander Tanjin Kaark'Goron&quot;] = &quot;tanjin&quot;,
+}
+</script>
+                            <eventHandlerList/>
+                        </Script>
+                        <Script isActive="yes" isFolder="no">
+                            <name>menanon</name>
+                            <packageName></packageName>
+                            <script>bash.menanon_name = &quot;the Temple at Menanon&quot;
+bash.menanon = {
+  9481, -- Overlooking the grasslands of the mighty redwood forest.
+  9482, -- Among the mighty redwoods.
+  9988, -- Among the mighty redwoods.
+ 10931, -- Redwood trail approaching a large gate.
+ 10940, -- Beyond a large sandstone gate.
+ 10941, -- A well-lit, sandstone foyer.
+ 10942, -- A sandstone training hall.
+ 10943, -- A musky, indoor stable.
+ 10949, -- A sandstone training hall of the western wing.
+ 10950, -- A sandstone training hall of the eastern wing.
+ 10951, -- An elegant chapel of yellow marble.
+ 10952, -- A dark stairway entrance.
+ 10953, -- Upon a shadowy stairwell.
+ 10955, -- A dreary butchery.
+ 10967, -- A damp and musky dungeon.
+ 11022, -- An enclosed, outdoor garden.
+ 11023, -- A brightly-lit antechamber.
+ 11057, -- A large dining hall.
+ 11058, -- A small hallway of marble and granite.
+ 11059, -- A small, sandstone smithy.
+ 11060, -- An open-air falconry.
+ 11061, -- A humbly decorated prayer antechamber.
+ 11062, -- A small hallway of granite and marble.
+ 11081, -- A long hallway of green marble.
+ 11082, -- A long hallway of blue marble.
+ 11083, -- A long hallway of red marble.
+ 11084, -- A lively, marble courtyard.
+ 11085, -- A long hallway of white marble.
+ 11086, -- A small hallway of mix-hued granite and marble.
+ 11087, -- A hallway of white and grey granite.
+ 11088, -- A hallway of mix-hued granite.
+ 11089, -- Before a priestly chamber.
+ 11090, -- A dimly-lit hallway of grey granite.
+ 11091, -- Outside the chamber of the High Priest.
+ 11092, -- A dimly-lit hallway of white granite.
+ 11093, -- Elaborately decorated chamber of the High Priest.
+ 11094, -- A plain, priestly chamber.
+ 11238, -- A hidden alcove.
+ 11239, -- The Norrjin ritual hall.
+ 11241, -- The Muamrite ritual hall.
+ 11242, -- The Sylayan ritual hall.
+ 11243, -- The Sidhe ritual hall.
+ 11244, -- The Akrabi ritual hall.
+ 11245, -- The Tanari ritual hall.
+ 11246, -- The Kohdon ritual hall.
+ 11247, -- The Ssylsin ritual hall.
+ 11248, -- The Lycaean ritual hall.
+ 11249, -- The Dwarf ritual hall.
+ 11250, -- The Xiur ritual hall.
+ 11251, -- A dark, hidden alcove.
+ 11259, -- A bleak, man-made passage.
+ 11260, -- An underground burial tomb.
+ 11261, -- A temperate bathing pool.
+ 11262, -- A cheerless underground brothel.
+ 11670, -- A Lamira ritual hall.
+}
+bash.menanon_targets = {
+	[&quot;a young Tanari priest&quot;] = &quot;priest&quot;,
+	[&quot;Jaenal, a Tanari cook&quot;] = &quot;jaenal&quot;,
+	[&quot;an elderly Tanari priest&quot;] = &quot;priest&quot;,
+	[&quot;a Tanari defender&quot;] = &quot;defender&quot;,
+	[&quot;Raevis, the High Priest&quot;] = &quot;raevis&quot;,
+}
+</script>
+                            <eventHandlerList/>
+                        </Script>
+                        <Script isActive="yes" isFolder="no">
+                            <name>nagiri</name>
+                            <packageName></packageName>
+                            <script>bash.nagiri_name = &quot;Nagiri Caverns&quot;
+bash.nagiri = {
+ 20942, -- A steam filled cavern.
+ 20943, -- A cramped hall.
+ 20944, -- A slime ridden cavern.
+ 20945, -- A fork in the caverns.
+ 20946, -- A well lit tunnel.
+ 20947, -- Wading through a trash pile.
+ 20948, -- A hole filled cavern.
+ 20949, -- A vine strewn cavern.
+ 20950, -- A path through the caverns.
+ 20951, -- A crystal path.
+ 20952, -- A maze of stone.
+ 20953, -- A slime-ridden well.
+ 20954, -- A stagnant pool of water.
+ 20955, -- A hatchery.
+ 20956, -- A weapon filled room.
+ 20957, -- A dangerous path.
+ 20958, -- A make-shift kitchen.
+ 20959, -- A dangerous path.
+ 20960, -- A cavern filled with moisture.
+ 20961, -- A chemical filled laboratory.
+ 20962, -- A smoke filled room.
+ 20963, -- A path through the cavern.
+ 20964, -- A crystal filled cave.
+ 20965, -- A well traveled path.
+ 20966, -- An antechamber of pus.
+ 20967, -- A pus-ridden throne room.
+ 20968, -- A darkened hall.
+ 20969, -- An untrodden path.
+ 20970, -- Nearing the exit of the cavern.
+ 20971, -- An entrance to the caverns.
+}
+bash.nagiri_targets = {
+	[&quot;a Nagirian archer&quot;] = &quot;nagiri&quot;,
+	[&quot;a Nagiri warrior&quot;] = &quot;nagiri&quot;,
+	[&quot;Nagira, the Nagiri queen&quot;] = &quot;nagira&quot;,
+	[&quot;Naugon, a Nagiri Necromancer&quot;] = &quot;naugon&quot;,
+	[&quot;a nagiri hatchling&quot;] = &quot;nagiri&quot;,
+}
+</script>
+                            <eventHandlerList/>
+                        </Script>
+                        <Script isActive="yes" isFolder="no">
+                            <name>tresleins</name>
+                            <packageName></packageName>
+                            <script>bash.tresleins_name = &quot;Treslein's Keep&quot;
+bash.tresleins = {
+ 10378, --  Border of the corrupted forest.
+ 10382, --  A rudimentary path.
+ 10386, --  Entering the corrupted forest.
+ 10387, --  Trees surrounded by gloom.
+ 10388, --  Before a large and corrupted tree.
+ 10389, --  Naze of dying trees.
+ 10396, --  Naze of dying trees.
+ 10397, --  Amidst choking and twisted trees.
+ 10403, --  Lost in the corrupted forest.
+ 10404, --  On the edge of a great wall of trees.
+ 10405, --  At the bank of a noxious river.
+ 10406, --  Following tracks between scarred trees.
+ 10407, --  A burned and blackened grove.
+ 10410, --  Thickening and intimidating trees.
+ 10411, --  On the edge of a great wall of trees.
+ 10413, --  At the bank of a noxious river.
+ 10414, --  On the toxic stream.
+ 10415, --  On the toxic stream.
+ 10416, --  Atop a small, spongy river island.
+ 10417, --  Atop a small, spongy river island.
+ 10418, --  A trio of strange trees atop the island.
+ 10419, --  Atop a small, spongy river island.
+ 10420, --  Atop a small, spongy river island.
+ 10421, --  On the toxic stream.
+ 10422, --  On the toxic stream.
+ 10423, --  At the toxic river's edge.
+ 10424, --  At the toxic river's edge.
+ 10425, --  Entering a patch of gargantuan mushrooms.
+ 10426, --  Passing through a patch of gruesome fungi.
+ 10427, --  Sloping path within a decay-laced mushroom patch.
+ 10428, --  Within sight of a black fortress.
+ 10430, --  Before a gaping chasm.
+ 10431, --  Before a gaping chasm.
+ 10432, --  At a menacing drawbridge.
+ 11235, --  Upon a menacing drawbridge.
+ 11610, --  Upon a menacing drawbridge.
+ 11611, --  Beneath a rusted portcullis.
+ 11762, --  Before the gatehouse.
+ 11763, --  Within the shadow of the dark fortress.
+ 11764, --  Inside the courtyard of Treslein's Keep.
+ 11765, --  Inside the stables.
+ 11766, --  Inside the western gatehouse.
+ 11767, --  Inside the gatehouse.
+ 11768, --  At the top of the western gatehouse.
+ 11769, --  Inside the eastern gatehouse.
+ 11770, --  The upper floor of the gatehouse.
+ 11771, --  At the top of the eastern gatehouse.
+ 11772, --  On the ramparts approaching the east tower.
+ 11774, --  Inside the east tower.
+ 11775, --  Inside the east tower.
+ 11776, --  Just inside the east tower.
+ 11777, --  Along the ramparts approaching the rear watch tower.
+ 11778, --  Inside the rear, watch tower.
+ 11779, --  Inside the rear, watch tower.
+ 11780, --  Lower level of the rear watch tower.
+ 11781, --  Along the ramparts approaching the west watch tower.
+ 11782, --  Inside the west watch tower.
+ 11783, --  Just beneath the turret of the west watch tower.
+ 11784, --  Lower level of the west watch tower.
+ 11785, --  Along the rampart approaching the gatehouse.
+ 11787, --  Inside the antechamber.
+ 11788, --  Within the main room of the keep.
+ 11789, --  Inside the kitchens.
+ 11791, --  Within the master's sanctum.
+ 11793, --  A hidden set of stairs behind the bookcase.
+ 11794, --  Along the second floor hallway.
+ 11795, --  Moving along the hallway.
+ 11796, --  --  At the end of the hallway.
+ 11797, --  Within the Master's bedchamber.
+ 11808, --  Inside a small bedchamber.
+ 11809, --  Inside a guest chamber.
+ 11810, --  Inside a guest chamber.
+ 11811, --  Inside a lady's bower.
+ 11815, --  Stone steps leading down.
+ 11816, --  A dark hallway beneath the keep.
+ 11817, --  At the end of a hallway.
+ 11818, --  Moving north along the hallway.
+ 11819, --  Moving along a hallway.
+ 11830, --  Moving north along the hallway.
+ 11831, --  Moving along a hallway.
+ 11832, --  Inside a small cell.
+ 11833, --  Inside a dungeon cell.
+ 11834, --  A secret cell.
+ 11835, --  A narrow passage.
+ 11836, --  Inside a small cell.
+ 11837, --  A narrow passage.
+ 11838, --  Inside the carvers room.
+ 11839, --  Inside a torture chamber.
+ 11840, --  Inside a torture chamber.
+ 21441, --  A continuing passage.
+ 21442, --  A foul-smelling dungeon.
+ 21443, --  A branching passageway.
+ 21444, --  Beside a pool of offal.
+ 21445, --  Before a gaping chasm.
+ 21446, --  A narrow dungeon walkway.
+ 21447, --  A low passageway.
+ 21448, --  A reeking depression.
+ 21449, --  A cordoned corner.
+ 21450, --  A collapsing wall of stone.
+ 21452, --  A continuing passage through the muck.
+ 21453, --  Beside a wall of corpses.
+ 21454, --  A roughly-carved passageway.
+ 21455, --  Before a rancid doorway.
+ 21456, --  An abandoned laboratory.
+ 21457, --  A bending corridor.
+ 21458, --  Before a gaping chasm.
+ 21459, --  A chamber suspended above darkness.
+ 21460, --  A storage room.
+ 21462, --  A sloping landing.
+}
+bash.tresleins_targets = {
+	[&quot;a rabid rabbit&quot;] = &quot;rabbit&quot;,
+	[&quot;a sly red fox&quot;] = &quot;fox&quot;,
+	[&quot;a great black bear&quot;] = &quot;bear&quot;,
+	[&quot;an eagle&quot;] = &quot;eagle&quot;,
+	[&quot;a foul smelling skunk&quot;] = &quot;skunk&quot;,
+	[&quot;a murder of crows&quot;] = &quot;crow&quot;,
+	[&quot;a large elk&quot;] = &quot;elk&quot;,
+	[&quot;a diseased raccoon&quot;] = &quot;raccoon&quot;,
+	[&quot;a fierce black wolf&quot;] = &quot;wolf&quot;,
+	[&quot;a crazed deer&quot;] = &quot;deer&quot;,
+	[&quot;a fearsome atrocity&quot;] = &quot;atrocity&quot;,
+	[&quot;a tormented scavenger&quot;] = &quot;scavenger&quot;,
+	[&quot;a gruesome monstrosity&quot;] = &quot;monstrosity&quot;,
+	[&quot;a foul abomination&quot;] = &quot;abomination&quot;,
+	[&quot;Chraskelth, the Carver&quot;] = &quot;chraskelth&quot;,
+	[&quot;Treslein, the Necromancer&quot;] = &quot;treslein&quot;,
+}
+
+-- A blackened and bloodstained cleaver in his hands, Chraskelth the Carver is here, his indomitable presence filling the room.</script>
+                            <eventHandlerList/>
+                        </Script>
+                        <Script isActive="no" isFolder="no">
+                            <name>incomplete scourge</name>
+                            <packageName></packageName>
+                            <script>bash.scourge_name = &quot;the Scourge Outpost&quot;
+bash.scourge = {
+  9486, -- A large palisade gate.
+  9487, -- Outside a palisade fence.
+  9488, -- Between a fence and a treeline.
+  9489, -- Outside a palisade fence.
+  9490, -- Along a palisade fence.
+  9491, -- Along a palisade fence.
+  9492, -- Abutting a cliffside.
+  9493, -- Outside a palisade fence.
+  9494, -- Between a fence and treeline.
+  9495, -- Between a fence and treeline.
+  9496, -- Along a palisade fence.
+  9497, -- Along a palisade fence.
+  9498, -- Abutting a cliffside.
+  9499, -- Before a large bonfire.
+  9500, -- Beside a large bonfire.
+  9501, -- Centre of a ruined encampment.
+  9502, -- Beside a large bonfire.
+  9503, -- The mess pavilion.
+  9506, -- The food pen.
+  9507, -- The remnants of an outdoor kitchen.
+  9508, -- Behind the shed.
+  9509, -- Nearing the cliffside.
+  9510, -- A charred barracks.
+  9511, -- A large storage shed.
+  9512, -- The whipping post.
+  9513, -- Approaching the cliff.
+  9517, -- A cleft in the escarpment.
+  9521, -- Base of a stairway.
+  9522, -- A pile of ash.
+  9523, -- Outside a guard shack.
+  9524, -- Outside the barracks.
+  9525, -- A charred barracks.
+  9526, -- A charred barracks.
+  9527, -- Middle of the encampment.
+  9528, -- Outside the barracks.
+  9529, -- A charred barracks.
+  9532, -- A pile of ash.
+  9534, -- Upon the stairway.
+  9535, -- Atop the cliff.
+  9536, -- Atop the stairway.
+  9537, -- A covered pavilion.
+  9538, -- A wooden platform.
+  9539, -- Edge of a cliff.
+  9540, -- Amidst the outpost.
+  9543, -- Inside the gate.
+  9545, -- A pile of ash.
+  9546, -- Against the cliff edge.
+  9563, -- Outside a palisade fence.
+  9564, -- Outside a wide gate.
+  9565, -- Along the palisade.
+  9566, -- Against the cliff edge.
+  9567, -- Inside the cleft.
+  9568, -- A large cavern.
+  9569, -- A wide tunnel.
+  9570, -- A spartan room.
+  9571, -- A dark passageway.
+  9572, -- A slovenly room.
+  9573, -- The captain's quarters.
+  9574, -- A sloping tunnel.
+  9575, -- -- A ransacked storage room.
+}
+bash.scourge_targets = {
+}
 </script>
                             <eventHandlerList/>
                         </Script>
@@ -58056,424 +58445,6 @@ end</script>
                             <string>sysMapDownloadEvent</string>
                         </eventHandlerList>
                     </Script>
-                </Script>
-            </ScriptGroup>
-        </ScriptGroup>
-        <ScriptGroup isActive="yes" isFolder="yes">
-            <name>bash additions</name>
-            <packageName></packageName>
-            <script></script>
-            <eventHandlerList/>
-            <Script isActive="yes" isFolder="no">
-                <name>bash.areas added</name>
-                <packageName></packageName>
-                <script>bash.areas = {
-	-- {&quot;aldrym&quot;,false},
-	{&quot;riksha&quot;,false},
-	{&quot;hollow&quot;,false},
-	{&quot;mavitt&quot;,false},
-	{&quot;mercenary&quot;,false},
-	{&quot;eorgahl&quot;,false},
-	{&quot;dregs&quot;,false},
-	{&quot;festeringbog&quot;,false},
-	{&quot;demonstone&quot;,false},
-
-	{&quot;tresleins&quot;,false},
-	{&quot;erorag&quot;,false},
-	{&quot;nagiri&quot;,false},
-	{&quot;menanon&quot;,false},
-	-- {&quot;scourge&quot;,false},
-	-- {&quot;khous&quot;,false},
-}</script>
-                <eventHandlerList/>
-            </Script>
-            <ScriptGroup isActive="yes" isFolder="yes">
-                <name>add to your bash areas</name>
-                <packageName></packageName>
-                <script></script>
-                <eventHandlerList/>
-                <Script isActive="yes" isFolder="no">
-                    <name>erorag</name>
-                    <packageName></packageName>
-                    <script>bash.erorag_name = &quot;the Ogre Fort, Erorag&quot;
-bash.erorag = {
-  3833, --   Hardened path leading to a stone gate
-  3834, --   A fallen entry gate.
-  3835, --   Below a lookout tower.
-  3836, --   A small guard checkpoint.
-  3837, --   Below a lookout.
-  3838, --   Below a lookout.
-  3839, --   Northwestern common square of Erorag.
-  3840, --   Western common square of Erorag.
-  3841, --   Southwest corner of the Erorag common square.
-  3842, --   Entry hall to the main tower.
-  3843, --   Below a lookout tower.
-  3844, --   Edge of the Erorag Common square.
-  3845, --   A ruined Erorag village well.
-  3846, --   Northern edge of the Erorag common square.
-  3848, --   Northeastern edge of the Erorag common square.
-  3849, --   Eastern common square before a tower.
-  3850, --   Southeastern corner of the common square.
- 14356, --   Under the northwest lookout.
- 14359, --   Atop the ruins of a watchtower.
- 14366, --   Atop the northern wall.
- 14367, --   Under the northeast lookout.
- 14371, --   Atop the ruins of a watchtower.
- 14372, --   Atop the eastern wall.
- 14373, --   Under the southeast lookout.
- 14374, --   Atop the ruins of a watchtower.
- 14375, --   Atop the southern wall.
- 14376, --   Under the southwest lookout.
- 14377, --   Atop the ruins of a watchtower.
- 14378, --   Atop the western wall.
- 14386, --   A guardhouse.
- 14403, --   Fort road skirting the wall.
- 14404, --   Fort road by small houses.
- 14405, --   Curving Fort road.
- 14406, --   Fort road behind the main tower.
- 14407, --   Curving Fort road.
- 14408, --   Fort road beside homes.
- 14409, --   Fort road near a middens.
- 14411, --   A ransacked fort smithy.
- 14413, --   Fort Armoury.
- 14416, --   A disheveled guards-room before stairs.
- 14417, --   A wide landing.
- 14418, --   Atop the main tower.
- 14419, --   Captain's Office..
-}
-bash.erorag_targets = {
-	[&quot;a hill giant&quot;] = &quot;giant&quot;,
-	[&quot;a two-headed ogre&quot;] = &quot;ogre&quot;,
-	[&quot;a decadent goblin priest&quot;] = &quot;goblin&quot;,
-	[&quot;Horde Commander Tanjin Kaark'Goron&quot;] = &quot;tanjin&quot;,
-}
-</script>
-                    <eventHandlerList/>
-                </Script>
-                <Script isActive="yes" isFolder="no">
-                    <name>menanon</name>
-                    <packageName></packageName>
-                    <script>bash.menanon_name = &quot;the Temple at Menanon&quot;
-bash.menanon = {
-  9481, -- Overlooking the grasslands of the mighty redwood forest.
-  9482, -- Among the mighty redwoods.
-  9988, -- Among the mighty redwoods.
- 10931, -- Redwood trail approaching a large gate.
- 10940, -- Beyond a large sandstone gate.
- 10941, -- A well-lit, sandstone foyer.
- 10942, -- A sandstone training hall.
- 10943, -- A musky, indoor stable.
- 10949, -- A sandstone training hall of the western wing.
- 10950, -- A sandstone training hall of the eastern wing.
- 10951, -- An elegant chapel of yellow marble.
- 10952, -- A dark stairway entrance.
- 10953, -- Upon a shadowy stairwell.
- 10955, -- A dreary butchery.
- 10967, -- A damp and musky dungeon.
- 11022, -- An enclosed, outdoor garden.
- 11023, -- A brightly-lit antechamber.
- 11057, -- A large dining hall.
- 11058, -- A small hallway of marble and granite.
- 11059, -- A small, sandstone smithy.
- 11060, -- An open-air falconry.
- 11061, -- A humbly decorated prayer antechamber.
- 11062, -- A small hallway of granite and marble.
- 11081, -- A long hallway of green marble.
- 11082, -- A long hallway of blue marble.
- 11083, -- A long hallway of red marble.
- 11084, -- A lively, marble courtyard.
- 11085, -- A long hallway of white marble.
- 11086, -- A small hallway of mix-hued granite and marble.
- 11087, -- A hallway of white and grey granite.
- 11088, -- A hallway of mix-hued granite.
- 11089, -- Before a priestly chamber.
- 11090, -- A dimly-lit hallway of grey granite.
- 11091, -- Outside the chamber of the High Priest.
- 11092, -- A dimly-lit hallway of white granite.
- 11093, -- Elaborately decorated chamber of the High Priest.
- 11094, -- A plain, priestly chamber.
- 11238, -- A hidden alcove.
- 11239, -- The Norrjin ritual hall.
- 11241, -- The Muamrite ritual hall.
- 11242, -- The Sylayan ritual hall.
- 11243, -- The Sidhe ritual hall.
- 11244, -- The Akrabi ritual hall.
- 11245, -- The Tanari ritual hall.
- 11246, -- The Kohdon ritual hall.
- 11247, -- The Ssylsin ritual hall.
- 11248, -- The Lycaean ritual hall.
- 11249, -- The Dwarf ritual hall.
- 11250, -- The Xiur ritual hall.
- 11251, -- A dark, hidden alcove.
- 11259, -- A bleak, man-made passage.
- 11260, -- An underground burial tomb.
- 11261, -- A temperate bathing pool.
- 11262, -- A cheerless underground brothel.
- 11670, -- A Lamira ritual hall.
-}
-bash.menanon_targets = {
-	[&quot;a young Tanari priest&quot;] = &quot;priest&quot;,
-	[&quot;Jaenal, a Tanari cook&quot;] = &quot;jaenal&quot;,
-	[&quot;an elderly Tanari priest&quot;] = &quot;priest&quot;,
-	[&quot;a Tanari defender&quot;] = &quot;defender&quot;,
-	[&quot;Raevis, the High Priest&quot;] = &quot;raevis&quot;,
-}
-</script>
-                    <eventHandlerList/>
-                </Script>
-                <Script isActive="yes" isFolder="no">
-                    <name>nagiri</name>
-                    <packageName></packageName>
-                    <script>bash.nagiri_name = &quot;Nagiri Caverns&quot;
-bash.nagiri = {
- 20942, -- A steam filled cavern.
- 20943, -- A cramped hall.
- 20944, -- A slime ridden cavern.
- 20945, -- A fork in the caverns.
- 20946, -- A well lit tunnel.
- 20947, -- Wading through a trash pile.
- 20948, -- A hole filled cavern.
- 20949, -- A vine strewn cavern.
- 20950, -- A path through the caverns.
- 20951, -- A crystal path.
- 20952, -- A maze of stone.
- 20953, -- A slime-ridden well.
- 20954, -- A stagnant pool of water.
- 20955, -- A hatchery.
- 20956, -- A weapon filled room.
- 20957, -- A dangerous path.
- 20958, -- A make-shift kitchen.
- 20959, -- A dangerous path.
- 20960, -- A cavern filled with moisture.
- 20961, -- A chemical filled laboratory.
- 20962, -- A smoke filled room.
- 20963, -- A path through the cavern.
- 20964, -- A crystal filled cave.
- 20965, -- A well traveled path.
- 20966, -- An antechamber of pus.
- 20967, -- A pus-ridden throne room.
- 20968, -- A darkened hall.
- 20969, -- An untrodden path.
- 20970, -- Nearing the exit of the cavern.
- 20971, -- An entrance to the caverns.
-}
-bash.nagiri_targets = {
-	[&quot;a Nagirian archer&quot;] = &quot;nagiri&quot;,
-	[&quot;a Nagiri warrior&quot;] = &quot;nagiri&quot;,
-	[&quot;Nagira, the Nagiri queen&quot;] = &quot;nagira&quot;,
-	[&quot;Naugon, a Nagiri Necromancer&quot;] = &quot;naugon&quot;,
-	[&quot;a nagiri hatchling&quot;] = &quot;nagiri&quot;,
-}
-</script>
-                    <eventHandlerList/>
-                </Script>
-                <Script isActive="yes" isFolder="no">
-                    <name>tresleins</name>
-                    <packageName></packageName>
-                    <script>bash.tresleins_name = &quot;Treslein's Keep&quot;
-bash.tresleins = {
- 10378, --  Border of the corrupted forest.
- 10382, --  A rudimentary path.
- 10386, --  Entering the corrupted forest.
- 10387, --  Trees surrounded by gloom.
- 10388, --  Before a large and corrupted tree.
- 10389, --  Naze of dying trees.
- 10396, --  Naze of dying trees.
- 10397, --  Amidst choking and twisted trees.
- 10403, --  Lost in the corrupted forest.
- 10404, --  On the edge of a great wall of trees.
- 10405, --  At the bank of a noxious river.
- 10406, --  Following tracks between scarred trees.
- 10407, --  A burned and blackened grove.
- 10410, --  Thickening and intimidating trees.
- 10411, --  On the edge of a great wall of trees.
- 10413, --  At the bank of a noxious river.
- 10414, --  On the toxic stream.
- 10415, --  On the toxic stream.
- 10416, --  Atop a small, spongy river island.
- 10417, --  Atop a small, spongy river island.
- 10418, --  A trio of strange trees atop the island.
- 10419, --  Atop a small, spongy river island.
- 10420, --  Atop a small, spongy river island.
- 10421, --  On the toxic stream.
- 10422, --  On the toxic stream.
- 10423, --  At the toxic river's edge.
- 10424, --  At the toxic river's edge.
- 10425, --  Entering a patch of gargantuan mushrooms.
- 10426, --  Passing through a patch of gruesome fungi.
- 10427, --  Sloping path within a decay-laced mushroom patch.
- 10428, --  Within sight of a black fortress.
- 10430, --  Before a gaping chasm.
- 10431, --  Before a gaping chasm.
- 10432, --  At a menacing drawbridge.
- 11235, --  Upon a menacing drawbridge.
- 11610, --  Upon a menacing drawbridge.
- 11611, --  Beneath a rusted portcullis.
- 11762, --  Before the gatehouse.
- 11763, --  Within the shadow of the dark fortress.
- 11764, --  Inside the courtyard of Treslein's Keep.
- 11765, --  Inside the stables.
- 11766, --  Inside the western gatehouse.
- 11767, --  Inside the gatehouse.
- 11768, --  At the top of the western gatehouse.
- 11769, --  Inside the eastern gatehouse.
- 11770, --  The upper floor of the gatehouse.
- 11771, --  At the top of the eastern gatehouse.
- 11772, --  On the ramparts approaching the east tower.
- 11774, --  Inside the east tower.
- 11775, --  Inside the east tower.
- 11776, --  Just inside the east tower.
- 11777, --  Along the ramparts approaching the rear watch tower.
- 11778, --  Inside the rear, watch tower.
- 11779, --  Inside the rear, watch tower.
- 11780, --  Lower level of the rear watch tower.
- 11781, --  Along the ramparts approaching the west watch tower.
- 11782, --  Inside the west watch tower.
- 11783, --  Just beneath the turret of the west watch tower.
- 11784, --  Lower level of the west watch tower.
- 11785, --  Along the rampart approaching the gatehouse.
- 11787, --  Inside the antechamber.
- 11788, --  Within the main room of the keep.
- 11789, --  Inside the kitchens.
- 11791, --  Within the master's sanctum.
- 11793, --  A hidden set of stairs behind the bookcase.
- 11794, --  Along the second floor hallway.
- 11795, --  Moving along the hallway.
- 11796, --  --  At the end of the hallway.
- 11797, --  Within the Master's bedchamber.
- 11808, --  Inside a small bedchamber.
- 11809, --  Inside a guest chamber.
- 11810, --  Inside a guest chamber.
- 11811, --  Inside a lady's bower.
- 11815, --  Stone steps leading down.
- 11816, --  A dark hallway beneath the keep.
- 11817, --  At the end of a hallway.
- 11818, --  Moving north along the hallway.
- 11819, --  Moving along a hallway.
- 11830, --  Moving north along the hallway.
- 11831, --  Moving along a hallway.
- 11832, --  Inside a small cell.
- 11833, --  Inside a dungeon cell.
- 11834, --  A secret cell.
- 11835, --  A narrow passage.
- 11836, --  Inside a small cell.
- 11837, --  A narrow passage.
- 11838, --  Inside the carvers room.
- 11839, --  Inside a torture chamber.
- 11840, --  Inside a torture chamber.
- 21441, --  A continuing passage.
- 21442, --  A foul-smelling dungeon.
- 21443, --  A branching passageway.
- 21444, --  Beside a pool of offal.
- 21445, --  Before a gaping chasm.
- 21446, --  A narrow dungeon walkway.
- 21447, --  A low passageway.
- 21448, --  A reeking depression.
- 21449, --  A cordoned corner.
- 21450, --  A collapsing wall of stone.
- 21452, --  A continuing passage through the muck.
- 21453, --  Beside a wall of corpses.
- 21454, --  A roughly-carved passageway.
- 21455, --  Before a rancid doorway.
- 21456, --  An abandoned laboratory.
- 21457, --  A bending corridor.
- 21458, --  Before a gaping chasm.
- 21459, --  A chamber suspended above darkness.
- 21460, --  A storage room.
- 21462, --  A sloping landing.
-}
-bash.tresleins_targets = {
-	[&quot;a rabid rabbit&quot;] = &quot;rabbit&quot;,
-	[&quot;a sly red fox&quot;] = &quot;fox&quot;,
-	[&quot;a great black bear&quot;] = &quot;bear&quot;,
-	[&quot;an eagle&quot;] = &quot;eagle&quot;,
-	[&quot;a foul smelling skunk&quot;] = &quot;skunk&quot;,
-	[&quot;a murder of crows&quot;] = &quot;crow&quot;,
-	[&quot;a large elk&quot;] = &quot;elk&quot;,
-	[&quot;a diseased raccoon&quot;] = &quot;raccoon&quot;,
-	[&quot;a fierce black wolf&quot;] = &quot;wolf&quot;,
-	[&quot;a crazed deer&quot;] = &quot;deer&quot;,
-	[&quot;a fearsome atrocity&quot;] = &quot;atrocity&quot;,
-	[&quot;a tormented scavenger&quot;] = &quot;scavenger&quot;,
-	[&quot;a gruesome monstrosity&quot;] = &quot;monstrosity&quot;,
-	[&quot;a foul abomination&quot;] = &quot;abomination&quot;,
-	[&quot;Chraskelth, the Carver&quot;] = &quot;chraskelth&quot;,
-	[&quot;Treslein, the Necromancer&quot;] = &quot;treslein&quot;,
-}
-
--- A blackened and bloodstained cleaver in his hands, Chraskelth the Carver is here, his indomitable presence filling the room.</script>
-                    <eventHandlerList/>
-                </Script>
-                <Script isActive="no" isFolder="no">
-                    <name>incomplete scourge</name>
-                    <packageName></packageName>
-                    <script>bash.scourge_name = &quot;the Scourge Outpost&quot;
-bash.scourge = {
-  9486, -- A large palisade gate.
-  9487, -- Outside a palisade fence.
-  9488, -- Between a fence and a treeline.
-  9489, -- Outside a palisade fence.
-  9490, -- Along a palisade fence.
-  9491, -- Along a palisade fence.
-  9492, -- Abutting a cliffside.
-  9493, -- Outside a palisade fence.
-  9494, -- Between a fence and treeline.
-  9495, -- Between a fence and treeline.
-  9496, -- Along a palisade fence.
-  9497, -- Along a palisade fence.
-  9498, -- Abutting a cliffside.
-  9499, -- Before a large bonfire.
-  9500, -- Beside a large bonfire.
-  9501, -- Centre of a ruined encampment.
-  9502, -- Beside a large bonfire.
-  9503, -- The mess pavilion.
-  9506, -- The food pen.
-  9507, -- The remnants of an outdoor kitchen.
-  9508, -- Behind the shed.
-  9509, -- Nearing the cliffside.
-  9510, -- A charred barracks.
-  9511, -- A large storage shed.
-  9512, -- The whipping post.
-  9513, -- Approaching the cliff.
-  9517, -- A cleft in the escarpment.
-  9521, -- Base of a stairway.
-  9522, -- A pile of ash.
-  9523, -- Outside a guard shack.
-  9524, -- Outside the barracks.
-  9525, -- A charred barracks.
-  9526, -- A charred barracks.
-  9527, -- Middle of the encampment.
-  9528, -- Outside the barracks.
-  9529, -- A charred barracks.
-  9532, -- A pile of ash.
-  9534, -- Upon the stairway.
-  9535, -- Atop the cliff.
-  9536, -- Atop the stairway.
-  9537, -- A covered pavilion.
-  9538, -- A wooden platform.
-  9539, -- Edge of a cliff.
-  9540, -- Amidst the outpost.
-  9543, -- Inside the gate.
-  9545, -- A pile of ash.
-  9546, -- Against the cliff edge.
-  9563, -- Outside a palisade fence.
-  9564, -- Outside a wide gate.
-  9565, -- Along the palisade.
-  9566, -- Against the cliff edge.
-  9567, -- Inside the cleft.
-  9568, -- A large cavern.
-  9569, -- A wide tunnel.
-  9570, -- A spartan room.
-  9571, -- A dark passageway.
-  9572, -- A slovenly room.
-  9573, -- The captain's quarters.
-  9574, -- A sloping tunnel.
-  9575, -- -- A ransacked storage room.
-}
-bash.scourge_targets = {
-}
-</script>
-                    <eventHandlerList/>
                 </Script>
             </ScriptGroup>
         </ScriptGroup>
